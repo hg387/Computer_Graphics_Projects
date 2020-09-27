@@ -1,0 +1,50 @@
+#!/bin/sh
+
+s1_val="1"
+s2_val="1"
+Aval="1"
+Bval="1"
+Cval="1"
+u_num="18"
+v_num="8"
+F="F"
+out="gupta.iv"
+
+while getopts ":r:t:A:B:C:u:v:o:" opt; do
+	case ${opt} in
+		r )
+			s1_val=${OPTARG}
+			;;
+		t )
+			s2_val=${OPTARG}
+			;;
+		A )
+			Aval=${OPTARG}
+			;;
+        B )
+			Bval=${OPTARG}
+			;;
+        C )
+			Cval=${OPTARG}
+			;;    
+		u )
+			u_num=${OPTARG}
+			;;
+		v )
+			v_num=${OPTARG}
+			;;
+        o )
+			out=${OPTARG}
+			;;
+		\?)
+			F=${OPTARG}
+			;;
+	esac
+done
+shift $((OPTIND-1))
+
+set -e
+make -f makefile CG_hw4 s1_val=$s1_val s2_val=$s2_val Aval=$Aval Bval=$Bval Cval=$Cval u_num=$u_num v_num=$v_num F=$F out=$out
+
+cat $out
+rm -f $out
