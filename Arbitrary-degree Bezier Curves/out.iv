@@ -1,0 +1,45 @@
+#Inventor V2.0 ascii
+
+Separator {LightModel {model BASE_COLOR} Material {diffuseColor 1.0 1.0 1.0}
+Coordinate3 { 	point [
+0 0 0,
+0.20962455 0.22325048 0.04037453,
+0.43699919 0.3960009 0.0629991,
+0.67987392 0.52275128 0.07012372,
+0.93599872 0.6080016 0.0639984,
+1.20312359 0.65625188 0.04687312,
+1.47899853 0.6720021 0.0209979,
+1.76137352 0.65975228 -0.01137727,
+2.04799856 0.6240024 -0.0480024,
+2.33662364 0.56925248 -0.08662747,
+2.62499875 0.5000025 -0.1250025,
+2.91087389 0.42075248 -0.16087747,
+3.19199904 0.3360024 -0.1920024,
+3.4661242 0.25025227 -0.21612728,
+3.73099937 0.1680021 -0.2310021,
+3.98437453 0.09375187 -0.23437688,
+4.22399968 0.0320016 -0.2240016,
+4.44762481 -0.01274873 -0.19762627,
+4.65299991 -0.0359991 -0.1530009,
+4.83787498 -0.03324952 -0.08787547,
+5 0 0
+] }
+IndexedLineSet {coordIndex [
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, -1, 
+] } }
+Separator {LightModel {model PHONG}Material {	diffuseColor 1.0 1.0 1.0}
+Transform {translation
+0 0 0
+}Sphere {	radius 0.05 }}
+Separator {LightModel {model PHONG}Material {	diffuseColor 1.0 1.0 1.0}
+Transform {translation
+1.33333 1.66667 0.33333
+}Sphere {	radius 0.05 }}
+Separator {LightModel {model PHONG}Material {	diffuseColor 1.0 1.0 1.0}
+Transform {translation
+4 -0.33333 -0.66667
+}Sphere {	radius 0.05 }}
+Separator {LightModel {model PHONG}Material {	diffuseColor 1.0 1.0 1.0}
+Transform {translation
+5 0 0
+}Sphere {	radius 0.05 }}
