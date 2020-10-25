@@ -1,0 +1,44 @@
+#!/bin/sh
+
+l="4"
+m="3"
+n="2.5"
+
+t="-51"
+u="39"
+v="65"
+
+out="gupta123.iv"
+
+while getopts ":l:m:n:t:u:v:o:" opt; do
+	case ${opt} in
+		l )
+			l=${OPTARG}
+			;;
+		m )
+			m=${OPTARG}
+			;;
+		n )
+			n=${OPTARG}
+			;;
+        t )
+			t=${OPTARG}
+			;;
+        u )
+			u=${OPTARG}
+			;;    
+		v )
+			v=${OPTARG}
+			;;
+        o )
+			out=${OPTARG}
+			;;
+	esac
+done
+shift $((OPTIND-1))
+
+set -e
+make -f makefile CG_hw5 l=$l m=$m n=$n t=$t u=$u v=$v out=$out
+
+cat $out
+rm -f $out
