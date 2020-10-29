@@ -1,0 +1,4 @@
+README<br/>
+These projects are implemented to get idea of computer graphics which represents a vast technical field, ranging from mathematics and geometry topics to computer hardware and software engineering topics to rendering, animation and virtual reality;
+<br/>
+These projects provide an introduction to the geometric modeling aspects of computer graphics, as well as the related topic of transformations. Concepts ranging from the various representations for 3D curves, surfaces and solids, and will also discuss the creation of complex, hierarchical models. Material on general topics in computer graphics, e.g. drawing/clipping algorithms, color, viewing and rendering,etc.
