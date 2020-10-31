@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CG_hw2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CG_hw2_jar</output-path>
+    <root id="archive" name="CG_hw2.jar">
+      <element id="module-output" name="CG_hw2" />
+    </root>
+  </artifact>
+</component>

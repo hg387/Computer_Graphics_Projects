@@ -1,0 +1,33 @@
+#!/bin/sh
+
+f="HW2_test0.txt"
+n="40"
+r="0.05"
+out="output.iv"
+tension="0"
+
+while getopts ":f:n:r:o:t:" opt; do
+	case ${opt} in
+		f )
+			f=${OPTARG}
+			;;
+		n )
+			n=${OPTARG}
+			;;
+		r )
+			r=${OPTARG}
+			;;
+		o )
+			out=${OPTARG}
+			;;
+		t )
+			tension=${OPTARG}
+			;;
+	esac
+done
+shift $((OPTIND-1))
+
+set -e
+make -f makefile CG_hw2 F=$f N=$n R=$r T=$tension OUT=$out
+
+cat $out 
