@@ -1,0 +1,38 @@
+#!/bin/sh
+
+f="patchPoints.txt"
+u="11"
+v="11"
+F="F"
+r="0.1"
+out="gupta.iv"
+
+while getopts ":f:u:v:r:o:" opt; do
+	case ${opt} in
+		f )
+			f=${OPTARG}
+			;;
+		u )
+			u=${OPTARG}
+			;;
+		v )
+			v=${OPTARG}
+			;;
+		r )
+			r=${OPTARG}
+			;;
+		o )
+			out=${OPTARG}
+			;;
+		\?)
+			F=${OPTARG}
+			;;
+	esac
+done
+shift $((OPTIND-1))
+
+set -e
+make -f makefile CG_hw3 f=$f U=$u V=$v F=$F R=$r OUT=$out
+
+cat $out
+rm -f $out
